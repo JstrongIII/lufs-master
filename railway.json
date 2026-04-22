@@ -3,10 +3,12 @@
   "build": {
     "builder": "NIXPACKS",
     "nixpacks": {
+      "玄uildCommand": "cd backend && pip install -r requirements.txt",
       "install": [
         "apt-get update && apt-get install -y ffmpeg"
       ]
-    }
+    },
+    "src": "./backend"
   },
   "deploy": {
     "numReplicas": 1,
